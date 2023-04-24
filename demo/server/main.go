@@ -13,7 +13,9 @@ type Order struct {
 }
 
 func (r *Order) GetOrder(ctx context.Context, str *wrapperspb.StringValue) (*pb.Order, error) {
-	return &pb.Order{}, nil
+	return &pb.Order{
+		Description: "hello " + str.GetValue(),
+	}, nil
 }
 
 func main() {

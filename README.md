@@ -6,7 +6,7 @@ a test project by protobuf
 ```shell
 protoc -I ./pb \
 --go_out ./ecommerce --go_opt paths=source_relative \
---go-grpc_out ecommerce/ --go-grpc_out --go_opt paths=source_relative \
+--go-grpc_out ecommerce/ --go-grpc_opt paths=source_relative \
 order.proto
 ```
 

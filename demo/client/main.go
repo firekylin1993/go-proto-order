@@ -17,6 +17,7 @@ func main() {
 	client := pb.NewOrderManagementClient(conn)
 	order, err := client.GetOrder(context.Background(), &wrapperspb.StringValue{Value: "hello world"})
 	if err != nil {
+		fmt.Println(err.Error())
 		return
 	}
 	fmt.Println(order.Description)
