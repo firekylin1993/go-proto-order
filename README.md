@@ -10,4 +10,13 @@ protoc -I ./pb \
 order.proto
 ```
 
+# 使用
+```shell
+cd demo/server
+## 开启服务端
+go run main.go
 
+cd demo/client
+## 开启客户端
+go run main.go
+```
