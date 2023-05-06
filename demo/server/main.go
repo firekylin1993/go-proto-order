@@ -2,9 +2,9 @@ package main
 
 import (
 	"context"
+	pb "go-proto-order/ecommerce"
 	"google.golang.org/grpc"
 	"google.golang.org/protobuf/types/known/wrapperspb"
-	pb "mytest/go-proto-order/ecommerce"
 	"net"
 )
 
